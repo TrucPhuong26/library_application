@@ -36,8 +36,6 @@ return done(null, false, {message: "Incorrect admin username or password" });
 })
 );
 passport.serializeUser(function (user, done) {
-// Here, you might want to serialize user data if required
-(e.g. user.id)
 done(null, user);
 });
 passport.deserializeUser(function (user, done) {
